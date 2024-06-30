@@ -1,0 +1,116 @@
+.quiz-main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.quiz-main .heading-name {
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  border: 3px solid rgb(102, 102, 102);
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+.que-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.que-info .que-sub {
+  padding: 10px 40px;
+  font-size: 25px;
+  font-family: serif;
+  font-weight: 400;
+}
+
+.que-info .que-score {
+  padding: 10px 20px;
+  font-size: 25px;
+  font-family: serif;
+  font-weight: 400;
+}
+.questions {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.questions h2 {
+  font-size: 20px;
+  padding: 10px 10px;
+}
+
+.Questions-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.options {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+.singleoption {
+  width: 40%;
+  height: 50px;
+  padding: 10px 10px;
+  margin: 10px;
+  cursor: pointer;
+  color: black;
+}
+
+@media (max-width: 860px) {
+  .que-info {
+    display: contents;
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .que-info .que-sub {
+    align-items: center;
+    font-size: 20px;
+    font-family: serif;
+    font-weight: 500;
+    padding-top: 2rem;
+  }
+  .que-info .que-score {
+    font-size: 20px;
+    font-family: serif;
+    font-weight: 500;
+    align-items: center;
+  }
+  .questions h2 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .singleoption {
+    width: 100%;
+  }
+  .control-btn {
+    display: flex;
+   margin-left: auto;
+   margin-right: auto;
+  }
+}
+
+.select {
+  background-color: green;
+  color: white;
+}
+
+.wrong {
+  background-color: red;
+  color: white;
+}
+
+.control-btn {
+  display: flex;
+  margin-top: 20px;
+}
